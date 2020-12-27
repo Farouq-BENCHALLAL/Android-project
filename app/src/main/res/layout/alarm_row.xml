@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    card_view:cardBackgroundColor="@color/colorPrimaryDark"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="22pt" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/enabled_switch"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="22pt" />
+
+                <ImageButton
+                    android:background="@drawable/ripple"
+                    android:id="@+id/delete_button"
+                    android:layout_height="140px"
+                    android:layout_marginLeft="20px"
+                    android:layout_width="140px"
+                    android:src="@drawable/baseline_delete_white_24"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
